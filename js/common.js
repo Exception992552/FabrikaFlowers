@@ -51,7 +51,7 @@ $(".close-menu").on('click', function(event) {
     container = ths.closest('.choice-block'),
     cont = container.siblings('.card-item '),
     img = cont.find('.image-card'),
-    btn = ths.closest('.choice'),
+    // btn = ths.find('.choice'),
     pth = ths.attr('href');
 
     img.fadeOut('300', function() {
@@ -59,7 +59,7 @@ $(".close-menu").on('click', function(event) {
         
     });
 
-    btn.addClass('active_choice').siblings('.choice').removeClass('active_choice');
+    ths.addClass('active_choice').siblings('.choice').removeClass('active_choice');
 
    //  container = ths.closest('.card-container'),
    //  content = container.find('.image-card'),
