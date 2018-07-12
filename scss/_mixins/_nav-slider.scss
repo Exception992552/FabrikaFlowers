@@ -1,0 +1,23 @@
+@mixin nav-slider() {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #e3e7ea;
+	position: relative;
+	text-align: center;
+	cursor:pointer;
+	transition:all 0.5s ease;
+	&:before {
+		content:"\f105";
+		font-family: FontAwesome;
+		font-size: 20px;
+		display: inline-block;
+		line-height: 40px;
+		color:#333;	
+	}
+	&:hover:before {
+			color:#fff;
+		}
+	&:hover {
+		background-color: $color-order;			
+	}
+}

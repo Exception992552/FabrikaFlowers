@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@include font-face("Lato-Black", "../fonts/Lato-Black");
+@include font-face("Lato-Bold", "../fonts/Lato-Bold", bold);
+@include font-face("Lato-Heavy", "../fonts/Lato-Heavy");
+@include font-face("Lato-Medium", "../fonts/Lato-Medium");
+@include font-face("Lato-Regular", "../fonts/Lato-Regular", regular);
+@include font-face("Lato-Semibold", "../fonts/Lato-Semibold");
+@include font-face("Philosopher-Regular", "../fonts/Philosopher-Regular",regular);
