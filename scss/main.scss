@@ -522,15 +522,13 @@ section.welcome {
 				width: 326px;
 				margin-bottom: 69px;
 			}
-
 			.link-button {
-				margin-bottom: 171px;
+				margin-bottom: 40px;
 				display: inline-block;
-				.button-composition {
-				
+				text-align:left;
 				@include button(200px);
 			}
-			}
+			
 			
 
 			.composition-additional-text {

@@ -35,15 +35,19 @@ section.welcome {
 
 .composition-block {
 		.composition-information {
-		padding: 100px 0 80px 0;
-		text-align: center;
+		padding: 100px 0 80px 50px;
+		// text-align: center;
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
 
 		p.composition-description {
 			display: inline-block;
 		}
 		.link-button {
-			display: block;
+			display: inline-block;
 			>div {
 				text-align:left;
 				display: inline-block;
@@ -56,7 +60,7 @@ section.welcome {
 	}
 
 	.block-image-composition {
-			display: none;
+			// display: none;
 		}
 	
 }
@@ -176,7 +180,11 @@ section.welcome {
 		 padding-bottom: 30px;
 		.composition-information {
 			padding: 50px 0 50px 0;
-			height: 600px;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
 			.h1 {
 				margin-bottom: 30px;
 			}
@@ -184,8 +192,14 @@ section.welcome {
 				margin-bottom: 30px;
 			}
 			.link-button {
-				margin-bottom: 100px;
+				margin-bottom: 50px;
 			}
+			.composition-additional-text {
+				background-position-y: 20%;
+			}
+		}
+		.block-image-composition {
+			display: none;
 		}
 	}
 	.exclusive-bouquet-block {
@@ -376,27 +390,31 @@ section.advantages{
 section.partners {
 	padding-bottom: 0;
 	.container {
-		.block-details-partners {
+		// .block-details-partners {
 			.description-partners {
 				.h2 {
-					font-size: 28px;
-					line-height: 36px;
+					font-size: 22px;
+					line-height: 30px;
+					margin-bottom: 20px;
 				}
-				.description-details {
-					font-size: 14px;
+				p.description-details {
+					font-size: 12px;
 				}
+
 
 			}
 			.button-details-partners {
 				p.description-button-partners {
-					font-size: 18px;
+					font-size: 14px;
 					line-height: 28px;
+					margin-bottom: 15px;
 				}
 				.button-partners {
-					width: 230px;
+					width: 200px;
+
 				}
 			}
-		}
+		// }
 	.block-features-for-partners {
 		p.title-features-for-partners {
 			text-align: center;
@@ -726,6 +744,41 @@ section.contacts {
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+
+
+
+
+form.form-popup {
+	width: 300px;
+	height: 430px;
+	padding: 10px 0;
+	text-align: center;	
+	.block-title-form {
+		p.form-description{
+			display: none;
+		}
+		.h2 {
+			font-size: 16px;
+		}
+	}
+	.block-input-form {
+		width: 250px;
+		height: 260px;
+	input {
+		width: 250px;
+	}
+	}
+	.block-button-form {
+		input.button {
+			width: 200px;
+			line-height: 52px;
+			margin-bottom: 10px;
+
+		}
+	}
+			
+}
+
 
 .container-menu.mm-menu {
 		max-width: 210px;
